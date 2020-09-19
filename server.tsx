@@ -21,8 +21,6 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, us
 
 // Create mongo connection
 const conn = mongoose.createConnection(mongoURI);
-console.log(mongoose.connection.readyState);
-mongoose.set('debug', true);
 
 // Middleware
 const app = express();
